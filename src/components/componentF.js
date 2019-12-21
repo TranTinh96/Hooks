@@ -1,23 +1,27 @@
-import React, { Component } from 'react'
-import {UserContext} from "../App"
+import React from "react";
+import { UserContext, ChannelContext } from "../App";
 
-export class componentF extends Component {
-   render() {
-      return (
-         <div>
-            <UserContext.Consumer>
-               {
-                  user =>{
-                     return <div>
-                        User context name {user}
-                     </div>
-                  }
-               }
-            </UserContext.Consumer>
-            
-         </div>
-      )
-   }
+function ComponentF() {
+  return (
+    <div>
+      <UserContext.Consumer>
+        {user => {
+          return (
+            <ChannelContext.Consumer>
+              {chanel => {
+                return (
+                  <div>
+                    {user} with {chanel}
+                  </div>
+                );
+              }}
+            </ChannelContext.Consumer>
+          );
+        }}
+      </UserContext.Consumer>
+    </div>
+  );
 }
 
-export default componentF
+export default ComponentF;
+

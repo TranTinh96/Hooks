@@ -7,6 +7,8 @@ import Navbar from "react-bootstrap/Navbar"
 import ComponentC from "./components/componentC"
 
 export const UserContext = React.createContext();
+export const ChannelContext = React.createContext()
+
 function App() {
  
   return (
@@ -16,7 +18,9 @@ function App() {
       </Navbar>
       {/*<MouseContainer/>*/ }
       <UserContext.Provider value={'Tran Tinh'}>
-          <ComponentC/>
+        <ChannelContext.Provider value={'Le Quynh Nhu'} >
+            <ComponentC/>
+        </ChannelContext.Provider>
       </UserContext.Provider>
      
     </div>
