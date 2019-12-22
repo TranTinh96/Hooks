@@ -1,7 +1,7 @@
 import React  from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar"
-import DataFeching_useReducer from "./components/Fetching/DataFeching_useReducer"
+import DataFeching_useReducer_2 from "./components/Fetching/DataFeching_useReducer_2"
 
 
 //export const CountContext = React.createContext();
@@ -17,7 +17,7 @@ function App() {
           <Navbar.Brand href="#">React Hooks</Navbar.Brand>
       </Navbar>
       <div className="container">
-        <DataFeching_useReducer/>
+        <DataFeching_useReducer_2/>
       </div>
     </div>
   );
