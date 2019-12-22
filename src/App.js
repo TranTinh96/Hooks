@@ -4,8 +4,8 @@ import Navbar from "react-bootstrap/Navbar"
 //import MouseContainer from "./components/mouseContainer"
 //import Count from "./components/detail/count"
 //import DataFeching from "./components/Fetching/DataFeching"
-import ComponentC from "./components/componentC"
-import CountOne  from "./components/reducer/CountOne"
+//import ComponentC from "./components/componentC"
+import CountThree  from "./components/reducer/CountTwo"
 
 export const UserContext = React.createContext();
 export const ChannelContext = React.createContext()
@@ -18,7 +18,7 @@ function App() {
           <Navbar.Brand href="#">Navbar</Navbar.Brand>
       </Navbar>
       {/*<MouseContainer/>*/ }
-      <CountOne/>
+      <CountThree/>
      
     </div>
   );
